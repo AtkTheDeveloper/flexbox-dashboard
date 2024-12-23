@@ -11,12 +11,55 @@ body{
 }
 .header{
     background-color: yellow;
-    height: 72px;
+    height: 50px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: 10px 20px;
+}
+.search{
+    position: relative;
+    width: 300px;
+}
+.search input{
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    flex: 1;
+}
+.fa-magnifying-glass{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: rgb(157, 176, 176);
+    padding: 5px;
+}
+.profile{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.profile i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.profile .fa-facebook-messenger:hover{
+    color: #bb00ff;
+}
+.profile .fa-bell:hover{
+    color: #5c5757;
 }
 .profile-img{
-    width: 20px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 .main{
     display: flex;
