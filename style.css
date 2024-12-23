@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header{
+    background-color: yellow;
+    height: 72px;
+}
+.main{
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+.sidebar{
+    background-color: blue;
+    width: 300px;
+}
+.middle{
+    background-color: green;
+}
+.right-side{
+    flex: 2;
+    width: 500px;
+    background-color: orange;
+    margin-right: 15px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.card{
+    width: 200px;
+    background: black;
+    color: white;
+}
+.footer{
+    background-color: red;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+}
+.t-box img{
+    width: 100px;
+}
