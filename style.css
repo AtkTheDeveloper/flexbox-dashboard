@@ -71,7 +71,7 @@ body{
 }
 .sidebar{
     background-color: rgb(29, 160, 241);
-    width: 250px;
+    width: 200px;
     display: flex;
     gap: 40px;
     flex-direction: column;
@@ -80,14 +80,14 @@ body{
     display: flex;
     gap: 10px;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px;
     cursor: pointer;
 }
 .dash i{
     font-size: 25px;
 }
 .dash h2{
-    font-size: 35px;
+    font-size: 27px;
     font-weight: 700;
 }
 .links-1{
@@ -108,10 +108,13 @@ body{
     cursor: pointer;
     color: white;
 }
-.middle{
-    background-color: green;
-    overflow-y: auto;
-}
+/* .middle{
+    background-color: rgb(188, 192, 188);
+} */
+ .middle h2{
+    margin: 20px 0;
+    font-size: 30px;
+ }
 .right-side{
     flex: 2;
     margin-right: 15px;
@@ -166,9 +169,39 @@ body{
     gap: 32px;
 }
 .card{
-    width: 200px;
+    width: 450px;
     background: black;
     color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.card-text h2{
+    margin: 10px 0;
+}
+.card-icons{
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.card-icons .fa-heart{
+    transition: all 0.5s ease;
+}
+.card-icons .fa-heart:hover{
+    color: red;
+}
+.card-icons .fa-eye{
+    transition: all 0.5s ease;
+}
+.card-icons .fa-eye:hover{
+    color: blue;
+}
+.card-icons .fa-code-branch{
+    transition: all 0.5s ease;
+}
+.card-icons .fa-code-branch:hover{
+    color: orange;
 }
 .footer{
     background-color: red;
