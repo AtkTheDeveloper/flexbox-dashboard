@@ -112,6 +112,12 @@ body{
     padding: 0 20px;
     cursor: pointer;
     color: white;
+    transition: all 0.5s ease;
+}
+.link:hover{
+    background-color: #495057;
+    color: orange;
+    padding: 10px;
 }
  .middle h2{
     margin: 20px 0;
