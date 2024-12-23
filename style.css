@@ -12,6 +12,11 @@ body{
 .header{
     background-color: yellow;
     height: 72px;
+    display: flex;
+    justify-content: space-between;
+}
+.profile-img{
+    width: 20px;
 }
 .main{
     display: flex;
