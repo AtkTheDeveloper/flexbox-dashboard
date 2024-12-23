@@ -17,6 +17,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
+    width: 100%;
 }
 .search{
     position: relative;
@@ -66,6 +67,7 @@ body{
     display: flex;
     gap: 20px;
     flex: 1;
+    height: 100vh;
 }
 .sidebar{
     background-color: rgb(29, 160, 241);
@@ -108,12 +110,55 @@ body{
 }
 .middle{
     background-color: green;
+    overflow-y: auto;
 }
 .right-side{
     flex: 2;
-    width: 500px;
-    background-color: orange;
     margin-right: 15px;
+}
+.top h2{
+    margin: 20px 0;
+    font-size: 30px;
+}
+.right-side .box{
+    background-color: rgb(240, 237, 237);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+.box hr{
+    margin: 10px 0;
+}
+.right-side .bottom {
+    margin-bottom: 30px;
+}
+.right-side .bottom h2{ 
+    margin: 20px 0;
+    font-size: 30px;
+}
+.bottom .boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: rgb(240, 237, 237);
+    border-radius: 10px;
+}
+.right-side .bottom .t-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.t-box img{
+    width: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.t-box .text h4{
+    font-size: 25px;
+    font-weight: 600;
+    color: blue;
+    cursor: pointer;
 }
 .cards{
     display: flex;
@@ -130,7 +175,4 @@ body{
     height: 72px;
     display: flex;
     justify-content: center;
-}
-.t-box img{
-    width: 100px;
 }
