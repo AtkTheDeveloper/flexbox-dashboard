@@ -18,11 +18,9 @@ heartIcons.forEach((heart) => {
          let liked = heart.classList.toggle('liked');
         
         if(liked){
-            heart.classList.add('liked');
-            alert('Thank you for liking this project!');
+            alert("Thank you for liking this project!");
         } else {
-            heart.classList.remove('liked');
-            alert('Sorry you did not like this project! Ill try better next time!');
+            alert("Sorry you did not like this project! I'll try better next time!");
         }
     });
 });
