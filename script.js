@@ -10,3 +10,19 @@ if (searchInput.value.length > 0) {
     }
 
 });
+
+const heartIcons = document.querySelectorAll('.fa-heart');
+
+heartIcons.forEach((heart) => {
+    heart.addEventListener('click', () => {
+         let liked = heart.classList.toggle('liked');
+        
+        if(liked){
+            heart.classList.add('liked');
+            alert('Thank you for liking this project!');
+        } else {
+            heart.classList.remove('liked');
+            alert('Sorry you did not like this project! Ill try better next time!');
+        }
+    });
+});
